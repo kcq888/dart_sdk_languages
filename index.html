@@ -1,0 +1,115 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Dart SDK Language Concepts</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="dart_sdk_language"
+                  title="Dart SDK Language Concepts"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Overview" duration="0">
+        <p>Dart SDK is a software Development kit (SDK) which provides programming library to be used to develop programs in the Dart environment. Dart SDK is a client-optimized language for fast apps on any platform.</p>
+<p class="image-container"><img alt="Dart Platform" src="img/c7c9b845f109c41f.svg"></p>
+<p>Dart supports development for native mobile and desktop devices and the Web.</p>
+<p>What you will learn in this codelab:</p>
+<ul>
+<li>Dart Language Features</li>
+<li>How to create your first program with Dart SDK and DartPad</li>
+<li>Types and Objects</li>
+<li>Variables, Class, method</li>
+<li>Programming Constructs, loop, if-then-else, etc</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Your First Program" duration="0">
+        <p>This step covers the major Dart language features from variables and operations to classes and libraries.</p>
+<h2 is-upgraded>main</h2>
+<p>Every programm has a main entry point called main. This is the main method in which the operating system is dispatched to when the operating system loads the program into its memory space and starts executing the program. In the example below, the main method defines a variable number and assigned the value of 42 and call a function printInteger with a function parameter. The output of this program is the text - The number is 42.</p>
+<pre><code>// Define a function.
+void printInteger(int aNumber) {
+  print(&#39;The number is $aNumber.&#39;); // Print to console.
+}
+
+// This is where the app starts executing.
+void main() {
+  var number = 42; // Declare and initialize a variable.
+  printInteger(number); // Call a function.
+}
+</code></pre>
+<p>Open a browser, and navigate to the URL - dartpad.dev.</p>
+<ul>
+<li>Click New Pad</li>
+<li>Click the OK button when ask to discard the current pad</li>
+<li>Click Dart on the New Pad Dialog Box and click Create</li>
+<li>Replease the codes in the New Pad with the code above</li>
+<li>Click the Run button</li>
+<li>Observe the output in the console</li>
+</ul>
+<p>Essentially, you have just created a console program to print a line onto the console. Refer to this link <a href="https://dart.dev/guides/language/language-tour#a-basic-dart-program" target="_blank">A Basic Program</a> for details.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Types and Objects" duration="0">
+        <p>Every programming languages have their primitive types. A type defines the data types of a programming languages. In Dart, every data type is an object. An object is an instance of a class. Dart&#39;s primitive types are integer, float, boolean, and strings. There are other data types such as collection. Collection is a data type containers like list.</p>
+<p>Like other programming language, Dart has a list of keywords. Dart treats the keywords specially. <a href="https://dart.dev/guides/language/language-tour#keywords" target="_blank">Dart Keywords</a> Take a moment to familiarize yourself with some of these keywords. You will learn some of these keywords as you are learning throughout these sessions.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Variables, Class functions, and Method" duration="0">
+        <h2 is-upgraded>Variable</h2>
+<p>A variable is used to declare a type for storing the data. A example of declaring a variale is the following. The statement declared the variable name and initialized its value to ‘Bob&#39;. This variable define the string type variable.</p>
+<pre><code>var name = &#39;Bob&#39;;
+</code></pre>
+<p>Read the explaination of Dart <a href="https://dart.dev/guides/language/language-tour#variables" target="_blank">variable</a>.</p>
+<h2 is-upgraded>Class</h2>
+<p>A class models a specific real world object. For example, the class Cat model a cat. A cat can eat, meow, walk and sense. All of these are operations of a class. The class can have properties. In the class Cat, it has the property of color. The color of the cat&#39;s hair.</p>
+<p>Read the explaination of Dart <a href="https://dart.dev/guides/language/language-tour#classes" target="_blank">class</a>.</p>
+<p>Work on an exercise to create a class in DartPad. Think of a real world object and model its behaviors and properties in a class. After the class is defined, declare the class and create an instance of this class. In your main program, call the class&#39;s method and print its output.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Program Constructs" duration="0">
+        <p>Controlling program flow are common programming syntaxes to direct the flow of a programm. The flow of program can be controlled by conditions. Conditions are specific states within a program. Like any other languages, Dart also has a lost control flow statements that we can use to control the flow of a program.</p>
+<p>Read the explaination of Dart <a href="https://dart.dev/guides/language/language-tour#control-flow-statements" target="_blank">control flow</a>.</p>
+<p>Exercise:</p>
+<p>Write a program to print the even integers from the follow list.</p>
+<p>1,4,6,7,9,2,12,26,99</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

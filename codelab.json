@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-11-28T10:58:28-05:00",
+  "id": "dart_sdk_language",
+  "duration": 0,
+  "title": "Dart SDK Language Concepts",
+  "authors": "Kevin Quan",
+  "summary": "Dart SDK Language Concepts",
+  "source": "dart_language_codelab.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "flutter-codelabs"
+  ],
+  "tags": [
+    "beginner"
+  ],
+  "url": "dart_sdk_language"
+}
